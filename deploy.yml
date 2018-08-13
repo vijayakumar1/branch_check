@@ -1,0 +1,11 @@
+---
+- hosts: ds_53
+  user: acsapp
+  become_method: yes
+  tasks:
+  - name: Unarchive a file that needs to be downloaded (added in 2.0)
+    unarchive:
+      src: http://192.168.105.99/3DS/Release-builds/sas-2018-08-13-16-12.7.0.zip
+      dest: /home/acsapp/deployed_location1/
+      remote_src: yes
+~                     
