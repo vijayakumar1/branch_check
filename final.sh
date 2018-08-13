@@ -7,7 +7,7 @@ while [ $c -le $num ]
 do
         read -p "enter the url:" url
         read -p "enter branch name:" branch
-        rm -rf .
+        rm -rf *
         git clone $url
         OUTPUT=$(ls) && dir="${OUTPUT}"
         echo $dir
