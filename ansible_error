@@ -1,1 +1,7 @@
 "changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.108.53 closed.\r\n", "module_stdout": "sudo: a password is required\r\n", "msg": "MODULE FAILURE""changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.108.53 closed.\r\n", "module_stdout": "sudo: a password is required\r\n", "msg": "MODULE FAILURE""changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.108.53 closed.\r\n", "module_stdout": "sudo: a password is required\r\n", "msg": "MODULE FAILURE""changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.108.53 closed.\r\n", "module_stdout": "sudo: a password is required\r\n", "msg": "MODULE FAILURE""changed": false, "failed": true, "module_stderr": "Shared connection to 192.168.108.53 closed.\r\n", "module_stdout": "sudo: a password is required\r\n", "msg": "MODULE FAILURE"
+
+
+
+
+fatal: [localhost]: FAILED! => {"changed": false, "failed": true, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE"}
+
