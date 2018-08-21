@@ -1,0 +1,38 @@
+ cp -rf nexus-2.14.4-03-bundle.tar.gz /usr/local/
+ 2077  cd /usr/local/
+ 2078  ls
+ 2079  tar -xvf nexus-2.14.4-03-bundle.tar.gz 
+ 2080  ls
+ 2081  ln -s nexus-2.14.4-03 nexus
+ 2082  vim /etc/profile
+ 2083  sudo vim /etc/profile
+export NEXUS_PLATFORM=linux-x86-64
+export NEXUS_HOME=/usr/local/nexus-2.14.4-03
+export NEXUS_EXEC=$NEXUS_HOME/usr/local/nexus-2.14.4-03/bin/$NEXUS_PLATFORM
+export PATH=$NEXUS_EXEXC:$PATH
+
+
+ 2084  cd nexus-2.14.4-03/
+ 2085  cd bin/
+ 2086  ls
+ 2087  sudo vim nexus
+RUN_AS_USER= root
+APP_NAME="nexus"
+APP_LONG_NAME="Sonatype Nexus Repository Manager"
+#PIDDIR="/var/run"
+
+ 2088  cp $NEXUS_EXEC/usr/local/nexus-2.14.4-03/bin/nexus /etc/init.d/nexus
+ 2089  sudo cp $NEXUS_EXEC/usr/local/nexus-2.14.4-03/bin/nexus /etc/init.d/nexus
+ 2090  chmod 755 /etc/init.d/nexus
+ 2091  sudo chmod 755 /etc/init.d/nexus
+ 2092  update-rc.d nexus defaults
+ 2093  sh /bin/nexus console
+ 2094  sudo chmod 777 /bin/nexus console
+ 2095  sudo chmod 777 /bin/nexus
+ 2096  sudo chmod 777 bin/nexus
+ 2097  sudo chmod 777 nexus
+ 2098  pwd
+ 2099  chmod 777 /usr/local/nexus-2.14.4-03/bin
+ 2100  cd ..
+ 2101  sh bin/nexus console
+ 2102  sh bin/nexus start
