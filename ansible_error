@@ -7,4 +7,5 @@ fatal: [localhost]: FAILED! => {"changed": false, "failed": true, "module_stderr
 
 sudo cp -a /home/acsapp/copy.yml "/home/vijaykumar/copy.yml-$(date +"%m-%d-%y-%r")" ------- copy with time stamp
 ls -t1|head -n 1 ----- get the recent file
-ansible deb_package : http://ftp.br.debian.org/debian/pool/main/a/ansible/ansible_2.2.1.0-2_all.deb
+ansible deb_package : http://ftp.br.debian.org/debian/pool/main/a/ansible/ansible_2.2.1.0-2_all.deb --- download
+
