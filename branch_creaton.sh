@@ -20,7 +20,7 @@ do
         echo $pjt
         ob=`git branch -r|tail -1| head -1|sed 's/origin\///'|tr -d ' '`
         git checkout -b $ob
-	      files=`ls`
+	files=$(ls)
       	echo $files
         git checkout -b $branch
         git push origin $branch
